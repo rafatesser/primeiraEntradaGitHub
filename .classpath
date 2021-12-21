@@ -14,5 +14,7 @@
 	<classpathentry kind="src" path="pOO_exercicios001"/>
 	<classpathentry kind="src" path="pOO_exercicios002"/>
 	<classpathentry kind="src" path="pOO_03"/>
+	<classpathentry kind="src" path="pOO_04"/>
+	<classpathentry kind="src" path="pOO_exercise003"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
