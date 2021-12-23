@@ -71,13 +71,13 @@ public class Worker {
 	}
 	
 	public Double incomeYear(Integer year, Integer month) {
-		Double sum = baseSalary;
+		Double sum = getBaseSalary();
 		Calendar cal = Calendar.getInstance();
 		
 		for (HourContract c : contracts)
 		{
 			cal.setTime(c.getDate());
-			int month_c = cal.get(Calendar.MONTH);
+			int month_c = cal.get(Calendar.MONTH) + 1 ;
 			int year_c = cal.get(Calendar.YEAR);
 		
 			if(month_c == month && year_c == year)
@@ -85,13 +85,18 @@ public class Worker {
 				sum += c.totalValue();
 			}
 		}
+		
 		return sum;
 	}
 
-	@Override
-	public String toString() {
-		return "Worker [name=" + name + ", level=" + level + ", baseSalary=" + baseSalary + ", department=" + department;
-				// + ", contracts=" + contracts + "]";
+	public String toString(String selectDate, Integer year, Integer month) {
+		String relatorio = 
+				String.format("Name: %s%n"
+				+ "Department: %s%n"
+				+ "Income for %s : "
+				+ "%.2f", getName(), this.department.getName(), 
+										selectDate, incomeYear(year, month));
+		return relatorio;
 	}
 	
 	

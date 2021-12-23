@@ -16,5 +16,6 @@
 	<classpathentry kind="src" path="pOO_03"/>
 	<classpathentry kind="src" path="pOO_04"/>
 	<classpathentry kind="src" path="pOO_exercise003"/>
+	<classpathentry kind="src" path="pOO_StringBuilder"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

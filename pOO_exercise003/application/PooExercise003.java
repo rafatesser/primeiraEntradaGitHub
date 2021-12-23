@@ -2,7 +2,6 @@ package application;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 import javax.swing.JOptionPane;
@@ -39,14 +38,11 @@ public class PooExercise003 {
 		}
 		
 		String selectDate = JOptionPane.showInputDialog("Enter month and year to calcule income (MM/yyyy): ");
-		String monthDate = selectDate.substring(0, 2);
-		String yearDate = selectDate.substring(3, 7);
-		
-		Calendar cal = Calendar.getInstance();
+		Integer monthDate = Integer.parseInt(selectDate.substring(0, 2));
+		Integer yearDate = Integer.parseInt(selectDate.substring(3, 7));
 		
 		
-		
-		System.out.println(String.format(""));
+		System.out.println(worker.toString(selectDate, yearDate, monthDate));
 		
 		
 	}
