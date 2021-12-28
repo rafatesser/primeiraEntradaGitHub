@@ -6,6 +6,7 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 
 import entities.Order;
+import entities.OrderA;
 import entities_enum.OrderStatus;
 
 public class Main {
