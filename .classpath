@@ -19,5 +19,7 @@
 	<classpathentry kind="src" path="pOO_StringBuilder"/>
 	<classpathentry kind="src" path="pOO_exercise004"/>
 	<classpathentry kind="src" path="pOO_Account"/>
+	<classpathentry kind="src" path="pOO_Employee"/>
+	<classpathentry kind="src" path="pOO_Product"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
