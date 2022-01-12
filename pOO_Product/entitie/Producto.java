@@ -33,4 +33,11 @@ public class Producto {
 		String pt = String.format("%.2f" , getPrice());
 		return pt;
 	}
+	
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(this.getName());
+		sb.append(" $" + this.priceTag());
+		return sb.toString();
+	}
 }

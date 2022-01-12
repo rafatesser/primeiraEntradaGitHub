@@ -51,6 +51,11 @@ public class ProgramProducto {
 			
 		}
 		
+		System.out.println("Price TAGS:");
+		for(Producto p : listProducto) {
+			System.out.println(p.toString());
+		}
+		
 		
 	}
 }

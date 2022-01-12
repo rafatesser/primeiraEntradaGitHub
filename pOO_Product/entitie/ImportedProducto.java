@@ -27,7 +27,18 @@ public class ImportedProducto extends Producto {
 	}
 	
 	public Double totalPrice() {
-		Double tp = super.getPrice() * this.getCustomFee();
+		Double tp = super.getPrice() + (super.getPrice() * (this.getCustomFee()/100));
 		return tp;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(this.getName());
+		sb.append(" $" + this.priceTag());
+		sb.append(" (Customs Fee: $");
+		sb.append(getCustomFee());
+		sb.append(" ) ");
+		return sb.toString();
 	}
 }
